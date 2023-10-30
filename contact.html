@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Telkomsel</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Define the glow animation */
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 5px #ff0000;
+            }
+            50% {
+                box-shadow: 0 0 20px #ff0000;
+            }
+            100% {
+                box-shadow: 0 0 5px #ff0000;
+            }
+        }
+
+        /* Apply the animation to form elements when hovering */
+        form input[type="text"]:hover,
+        form input[type="email"]:hover,
+        form input[type="password"]:hover,
+        form select:hover,
+        form textarea:hover,
+        form input[type="radio"]:hover,
+        form input[type="checkbox"]:hover {
+            animation: glow 0.5s infinite alternate;
+        }
+        form {
+            border: 2px solid #ff0000;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 400px;
+            background-color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <ul class="navbar" style="width: 100% ;">
+      <img src="assets/telkomsel.png" alt="" height="50px" />
+      <li><a href="home.html">Home</a></li>
+      <li><a href="biodata.html">Biodata</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="https://fti.unai.edu" target="_blank">FTI Website</a></li>
+      <li><a href="https://unai.edu" target="_blank">UNAI Website</a></li>
+      <li><a href="shopee.html">My Wish</a></li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" height="45" viewBox="0 -960 960 960" width="24">
+          <path
+            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+          />
+        </svg>
+      </li>
+      <li class="button-sign-in"><a href="#" style="color: white">Sign in</a></li>
+    </ul>
+  <form style="max-width: 400px; margin: 0 auto">
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" style="width: 100%; padding: 5px; margin-bottom: 10px" required /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" style="width: 100%; padding: 5px; margin-bottom: 10px" required /><br />
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" style="width: 100%; padding: 5px; margin-bottom: 10px" required /><br />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" style="width: 100%; padding: 5px; margin-bottom: 10px" required /><br />
+
+        <label style="display: block; margin-bottom: 10px">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" style="margin-right: 5px" />
+        <label for="male" style="margin-right: 10px">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" style="margin-right: 5px" />
+        <label for="female">Female</label><br />
+
+        <label for="religion">Region:</label>
+        <select id="religion" name="religion" style="width: 100%; padding: 5px; margin-bottom: 10px">
+            <option value="Adventist">Adventist</option>
+            <option value="Khatolik">Khatolik</option>
+            <option value="Islam">Islam</option>
+            <option value="Khonghucu">Khonghucu</option>
+        </select><br />
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" style="width: 100%; padding: 5px" required></textarea><br />
+
+        <label style="display: block; margin-bottom: 10px">Hobbies:</label>
+        <input type="checkbox" id="hobby1" name="hobbies[]" value="Reading" style="margin-right: 5px" />
+        <label for="hobby1" style="margin-right: 10px">Reading</label>
+        <input type="checkbox" id="hobby2" name="hobbies[]" value="Gaming" style="margin-right: 5px" />
+        <label for="hobby2">Gaming</label>
+        <input type="checkbox" id="hobby3" name="hobbies[]" value="Coding" style="margin-right: 5px" />
+        <label for="hobby3" style="margin-right: 10px">Coding</label>
+        <br />
+
+        <input type="submit" value="Save" style="background-color: #ff0000; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; margin-top: 10px" />
+    </form>
+
+    <footer>
+      <p>© PT TELEKOMUNIKASI SELULAR, 2023.</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms Of Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

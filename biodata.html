@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beranda | Telkomsel</title>
+    <link rel="stylesheet" href="style.css" />
+  <style>
+        .id-card {
+            width: 300px;
+            border: 2px solid #000;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            background-color: #fff;
+            transition: box-shadow 0.3s;
+        }
+
+        .id-card:hover {
+            animation: glow 5s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            50% {
+                box-shadow: 0 4px 12px rgba(255, 0, 0, 0.5);
+            }
+            100% {
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .id-card h1 {
+            font-size: 20px;
+            margin: 0;
+            padding: 10px 0;
+            background-color: #ff0000;
+            color: #fff;
+            border-bottom: 2px solid #ff0000;
+        }
+
+        .id-card img {
+            height: 300px;
+            border: 2px solid #ff0000;
+            margin: 10px 0;
+        }
+
+        .id-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .id-card ul li {
+            font-weight: bold;
+            margin: 5px 0;
+        }
+    </style>
+  </head>
+  <body>
+    <ul class="navbar" >
+      <img src="assets/telkomsel.png" alt="" height="50px" />
+      <li><a href="home.html">Home</a></li>
+      <li><a href="biodata.html">Biodata</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="https://fti.unai.edu" target="_blank">FTI Website</a></li>
+      <li><a href="https://unai.edu" target="_blank">UNAI Website</a></li>
+      <li><a href="shopee.html">My Wish</a></li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" height="45" viewBox="0 -960 960 960" width="24">
+          <path
+            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+          />
+        </svg>
+      </li>
+      <li class="button-sign-in"><a href="#" style="color: white">Sign in</a></li>
+    </ul>
+    
+  <div class="id-card">
+        <h1>Biodata</h1>
+        <img src="assets\avatar.jpg" alt="avatar">
+        <ul>
+            <li><strong>Nama:</strong> Gita Marcella Naibaho</li>
+            <li><strong>Umur:</strong> 19 tahun</li>
+            <li><strong>Tempat Tanggal Lahir:</strong> Pekanbaru, 17 Februari 2004</li>
+            <li><strong>Status Hubungan:</strong> Single</li>
+            <li><strong>Hobby:</strong> Badminton</li>
+        </ul>
+    </div>
+    <footer>
+      <p>© PT TELEKOMUNIKASI SELULAR, 2023.</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms Of Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
